@@ -1,0 +1,48 @@
+{
+	"manifest_version": 3,
+	"name": "SaySnap",
+	"version": "0.0.1",
+	"author": "sr7.<504105925@qq.com>",
+	"description": "A Chrome plug-in for sharing ⋅ discoveries",
+	"icons": {
+		"16": "icons/icon.png",
+		"48": "icons/icon.png",
+		"128": "icons/icon.png"
+	},
+	"host_permissions": [
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"content/dom-to-image.min.js",
+				"content/jquery-3.6.js",
+				"content/template.js",
+				"content/index.js"
+			],
+			"css": [
+				"css/index.css"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": [
+		"contextMenus"
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"icons/*"
+			],
+			"matches": [
+				"<all_urls>"
+			],
+			"extension_ids": []
+		}
+	]
+}

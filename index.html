@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<style>
+		body {
+			margin: 46px 0;
+			padding: 0;
+		}
+		.card {
+			padding: 30px 10px;
+			background-image: linear-gradient(to top, rgb(255, 241, 235) 0%, rgb(172, 224, 249) 100%);
+			width: 375px;
+			box-sizing: content-box;
+		}
+		.content {
+			padding: 24px;
+			background-color: #ffffff;
+			border-radius: 10px;
+			box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+			font-weight: 300;
+		}
+
+		.date {
+			color: #666666;
+			font-size: 14px;
+		}
+
+		.text {
+			margin-top: 20px;
+			color: #000000;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		.logo {
+			font-size: 10px;
+			color: #666666;
+		}
+		.footer {
+			display: flex;
+			margin-top: 24px;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+
+
+		.card-cp {
+			background-color: #ffffff;
+			padding: 40px 30px 20px;
+			width: 375px;
+			display: inline-block;
+			position: absolute;
+			z-index: -99999;
+		}
+
+		.content-cp {
+			color: #333333;
+			background-color: rgb(255, 241, 235);
+			margin: 0;
+			padding: 20px;
+			border-radius: 20px;
+			box-shadow:  0 0 20px rgba(0,0,0,.1);
+		}
+
+		.text-cp {
+			color: #333333;
+			font-size: 16px;
+			line-height: 1.6;
+			font-weight: 300;
+		}
+
+		.logo-cp {
+			color: #333333;
+			margin-top: 20px;
+			font-size: 14px;
+			text-align: right;
+      margin-right: 10px;
+		}
+
+		.date-cp {
+			color: #666666;
+			margin-top: 4px;
+			font-size: 12px;
+			text-align: right;
+     margin-right: 10px;
+		}
+
+		.say-snap-r7-card-3 {
+			padding: 30px 20px 20px;
+			box-sizing:  border-box;
+			width: 375px;
+			background-color: #ffffff;
+		}
+
+		.say-snap-r7-date-show {
+			font-size: 30px;
+			font-weight: 300;
+		}
+
+		.say-snap-r7-month-show {
+			margin-top: 12px;
+			font-weight: 300;
+			position: relative;
+			display: inline-block;
+		}
+
+		.say-snap-r7-month-show::after {  
+			content: '';  
+			position: absolute;  
+			width: 100%;  
+			height: 1px;  
+			bottom: -2px;  
+			left: 0;  
+			background: #333; /* 可以使用渐变、阴影等 */  
+		}
+
+		.say-snap-r7-card-3-content {
+			margin-top: 30px;
+			font-size: 16px;
+			font-weight: 300;
+			color: #666666;
+			line-height: 1.6;
+		}
+
+		.say-snap-r7-card-3-footer {
+			margin-top: 46px;
+			font-size: 12px;
+			font-weight: 300;
+			color: #999999;
+		}
+
+
+	</style>
+	
+</head>
+<body>
+
+
+	<div>
+		<div class="say-snap-r7-card-3">
+			<div class="say-snap-r7-date-show"> 21 </div>
+			<div>
+				<div class="say-snap-r7-month-show"> 十二月 </div>
+			</div>
+			<div>
+				<div class="say-snap-r7-month-show"> 二零贰肆月 </div>
+			</div>
+
+			<div class="say-snap-r7-card-3-content">
+				软件给出了「是否显示二维码」的选项，如果打开
+			</div>
+
+			<div class="say-snap-r7-card-3-footer">发现 ⋅ 分享  </div>
+		</div>
+	
+	</div>
+
+	<div class="card">
+		<div class="content">
+			<div class="date">2023-10-20 14:08:45</div>
+			<div class="text">软件给出了「是否显示二维码」的选项，如果打开，则会在图片右下角生成一软件给出了「是否显示二维码」的选项，如果打开，则会在图片右下角生成一个二维码，引向 app 的下载地址。</div>
+			<div class="footer">
+				<div class="logo">发现 ⋅ 分享</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+<div>
+	<div class="card-cp" id="card-cp">
+		<div class="content-cp">
+			<div class="text-cp">软件给出了「是否显示二维码」的选项，如果打开，则会在图片右下角生成一软件给出了「是否显示二维码」的选项，如果打开，则会在图片右下角生成一个二维码，引向 app 的下载地址。</div>
+		</div>
+		<div class="logo-cp">发现 ⋅ 分享</div>
+		<div class="date-cp">周四 2023-10-20</div>
+	</div>
+</div>
+
+
+
+
+<button onclick="handleDown()">下载</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	function handleDown() {
+		console.log('down')
+
+		// domtoimage.toPng(document.getElementsByClassName('card-cp')[0])
+		domtoimage.toBlob(document.getElementById('card-cp'))
+			.then(function (blob) {
+				console.log('blob--', blob)
+				const item = new ClipboardItem({ "image/png": blob });  
+					// window.saveAs(blob, 'my-node.png');
+					navigator.clipboard.write([item]).then(function() {  
+									console.log('Image copied to clipboard');  
+							}, function(err) {  
+									console.error('Could not copy image: ', err);  
+							}); 
+			})
+			.catch((err) => {
+				console.error( 'toBlob-----',err)
+			})
+	}
+</script>
+</body>
+</html>

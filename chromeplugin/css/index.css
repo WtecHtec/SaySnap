@@ -1,0 +1,145 @@
+
+.say-snap-r7-content-main-cp {
+	display: none;
+	width: 375px;
+	max-width: 375px;
+}
+.say-snap-r7-card-cp {
+	background-color: #ffffff;
+	padding: 40px 30px 20px;
+	width: 375px;
+	max-width: 375px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.say-snap-r7-content-cp {
+	color: #333333;
+	background-color: rgb(255, 241, 235);
+	margin: 0;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow:  0 0 20px rgba(0,0,0,.1);
+}
+
+.say-snap-r7-text-cp {
+	color: #333333;
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 300;
+}
+
+.say-snap-r7-logo-cp {
+	color: #333333;
+	margin-top: 20px;
+	font-size: 14px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.say-snap-r7-date-cp {
+	color: #666666;
+	margin-top: 4px;
+	font-size: 12px;
+	text-align: right;
+ margin-right: 10px;
+}
+
+.say-snap-r7-dialog-cp {
+	padding: 10px 8px;
+	background-color: #ffffff;
+	color: #333333;
+	position: fixed;
+	bottom: 46px;
+	left: 50%;
+	transform: translateY(-50%);
+	display: none;
+	z-index: 999999;
+	border-radius: 10px;
+	box-shadow:  0 0 20px rgba(0,0,0,.1);
+}
+
+
+
+.say-snap-r7-card {
+	padding: 30px 10px;
+	background-image: linear-gradient(to top, rgb(255, 241, 235) 0%, rgb(172, 224, 249) 100%);
+	width: 375px;
+	box-sizing: content-box;
+}
+.say-snap-r7-content {
+	padding: 24px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+	font-weight: 300;
+}
+
+.say-snap-r7-date {
+	color: #666666;
+	font-size: 14px;
+}
+
+.say-snap-r7-text {
+	margin-top: 20px;
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.say-snap-r7-logo {
+	font-size: 10px;
+	color: #666666;
+}
+
+.say-snap-r7-footer {
+	display: flex;
+	margin-top: 24px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.say-snap-r7-card-3 {
+	padding: 30px 20px 20px;
+	box-sizing:  border-box;
+	width: 375px;
+	background-color: #ffffff;
+}
+
+.say-snap-r7-date-show {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.say-snap-r7-my-show {
+	margin-top: 12px;
+	font-weight: 300;
+	position: relative;
+	display: inline-block;
+}
+
+.say-snap-r7-my-show::after {  
+	content: '';  
+	position: absolute;  
+	width: 100%;  
+	height: 1px;  
+	bottom: -2px;  
+	left: 0;  
+	background: #333; /* 可以使用渐变、阴影等 */  
+}
+
+.say-snap-r7-card-3-content {
+	margin-top: 30px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #666666;
+	line-height: 1.6;
+}
+
+.say-snap-r7-card-3-footer {
+	margin-top: 46px;
+	font-size: 12px;
+	font-weight: 300;
+	color: #999999;
+}
